@@ -9,7 +9,7 @@ class SignupPageUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Entrepreneur'),
+        title: Text('User'),
         foregroundColor: const Color(0xFF0025A8),
       ),
       body: SingleChildScrollView(

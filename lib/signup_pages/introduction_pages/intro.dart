@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/utils.dart';
 import 'package:syoop/home/home.dart';
+// import 'package:syoop/home/home_old.dart';
 import 'package:syoop/widgets/blue_button.dart';
 
 // the intro will have 4 widgets, image, title description, and a button

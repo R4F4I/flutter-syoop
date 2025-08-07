@@ -10,7 +10,25 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      // bottomNavigationBar: ,
+      bottomNavigationBar: BottomNavigationBar(
+        // type: BottomNavigationBarType.fixed,
+        // unselectedFontSize: 0,
+        iconSize: 24,
+        currentIndex: 0,
+        // fixedColor: Colors.blue, 
+        backgroundColor: Color(0xff0025A8),
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.car_rental, color: const Color.fromARGB(119, 255, 255, 255),), 
+            activeIcon: Icon(Icons.car_rental, color: Colors.white,),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home, color: const Color.fromARGB(119, 255, 255, 255),), 
+            activeIcon: Icon(Icons.home, color: Colors.white,),
+            label: '',
+          ),
+        ]),
       body: Padding(
         padding: const EdgeInsets.all(28.0),
         child: SingleChildScrollView(

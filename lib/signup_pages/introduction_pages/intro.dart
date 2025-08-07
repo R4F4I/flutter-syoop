@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
-import 'package:syoop/home/home.dart';
-// import 'package:syoop/home/home_old.dart';
+import 'package:syoop/main_pages/car_rental_main_page.dart'; // after intro, we will go to car rental main page,
 import 'package:syoop/widgets/blue_button.dart';
 
 // the intro will have 4 widgets, image, title description, and a button
@@ -66,6 +64,7 @@ class Intro extends StatelessWidget {
               case 6:
                 return introPage(context,index);
               default:
+                return SizedBox.shrink();
             }
           }
         ),
@@ -87,7 +86,7 @@ class Intro extends StatelessWidget {
           BlueButton(
             onPressed: (){
               print("Next tapped");
-              Get.to(() => Home());
+              Get.to(() => CarRentalMainPage());
             }, 
             text: 'Next', 
             minWidth: 168,

@@ -75,7 +75,7 @@ class SignupPageUser extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.check_circle_outline, color: const Color(0xFF0025A8),size: 14,),
+                  Icon(Icons.verified_user, color: const Color(0xFF0025A8),size: 14,),
                   TermsAndCond(),
                 ],
               ),

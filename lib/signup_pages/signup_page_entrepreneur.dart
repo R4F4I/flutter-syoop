@@ -88,7 +88,7 @@ class SignupPageEntrepreneur extends StatelessWidget {
                   ],
                 ),
               ),
-              BlueButton(onPressed: (){}, text: 'Submit',minWidth: 200,),
+              BlueButton(onPressed: (){}, text: 'Submit',horizontalPadding: 200,),
               SizedBox(height: 12,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

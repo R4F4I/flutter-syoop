@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:syoop/home/home.dart';
 import 'package:syoop/main_pages/car_rental_main_page.dart'; // after intro, we will go to car rental main page,
 import 'package:syoop/widgets/blue_button.dart';
 
@@ -82,15 +83,42 @@ class Intro extends StatelessWidget {
           SizedBox(height: 3,),
           Text(description[index],style: TextStyle(fontSize: 16, color: Colors.grey, fontFamily: 'Roboto')),
           SizedBox(height: 20,),  
-          index == 6?
+          /* index == 6?
           BlueButton(
             onPressed: (){
               print("Next tapped");
               Get.to(() => CarRentalMainPage());
             }, 
             text: 'Next', 
-            minWidth: 168,
-          ): SizedBox.shrink()
+            horizontalPadding: 168,
+          ): SizedBox.shrink() */
+          BlueButton(
+              onPressed: (){
+                // index == 6?
+                print("Next tapped");
+                switch (index) {
+                  case 0:
+                  Get.to(() => Home());
+                  case 1:
+                  Get.to(() => ());
+                  case 2:
+                  Get.to(() => CarRentalMainPage());
+                  case 3:
+                  Get.to(() => ());
+                  case 4:
+                  Get.to(() => ());
+                  case 5:
+                  Get.to(() => ());
+                  case 6:
+                  Get.to(() => ());
+                  default:
+                  Get.to(() => Home());
+                }
+              }, 
+              text: 'Next', 
+              horizontalPadding: 168,
+              verticalPadding: 12,
+            ),
       
        ], 
       );

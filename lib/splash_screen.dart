@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
             child: Image.asset("images/splash_screen_image.png", fit: BoxFit.fitWidth,),
           ),
           Text(
-            'Syoop',
+            'Syooop',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, fontFamily: 'Roboto'),
           ),
 
@@ -30,7 +30,9 @@ class SplashScreen extends StatelessWidget {
             children: [
               BlueButton(
                 text: "Log In",
-                minWidth: MediaQuery.of(context).size.width * 0.65,
+                fontSize: 20,
+                horizontalPadding: MediaQuery.of(context).size.width * 0.54,
+                verticalPadding: 20,
                 onPressed: () {
                   print("Log in tapped");
                   Get.to(() => Login());
@@ -40,23 +42,16 @@ class SplashScreen extends StatelessWidget {
               SizedBox(
                 height: 15,
               ),
-              TextButton(
-                onPressed: () {
+              BlueButton(
+                onPressed: (){
                   print("Log in tapped");
                   Get.to(()=> SignupPage1());
-                }, 
-                style: TextButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    side: BorderSide(color: const Color(0xFF0025A8), width: 0.3),
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                  minimumSize: Size(MediaQuery.of(context).size.width * 0.65, 55),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("Sign in", style: TextStyle(fontFamily: 'Roboto',fontSize: 20, color: const Color(0xFF0025A8))
-                  ),
-                ),
+                },
+                customText: Text("Sign in", style: TextStyle(fontFamily: 'Roboto',fontSize: 20, color: const Color(0xFF0025A8))),
+                horizontalPadding: MediaQuery.of(context).size.width * 0.54,
+                verticalPadding: 20,
+                customColor: Colors.transparent,
+
               ),
               SizedBox(height: 7,),
               TermsAndCond()

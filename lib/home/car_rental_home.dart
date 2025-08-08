@@ -1,7 +1,10 @@
 // The Scaffold and BottomNavigationBar are now handled by car_rental_main_page
 // This widget is now just the content of the page.
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:syoop/widgets/syoop_search_bar.dart';
+
+import 'car_detail_view.dart';
 
 class CarRentalHome extends StatelessWidget {
   const CarRentalHome({super.key});
@@ -235,7 +238,9 @@ class CarRentalHome extends StatelessWidget {
 
   TextButton detailsButton() {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        Get.to(() => CarDetailView());
+      },
       style: TextButton.styleFrom(
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
         shape: RoundedRectangleBorder(

@@ -3,8 +3,22 @@ import 'package:get/get.dart';
 import 'package:syoop/home/home_controller.dart';
 
 class BottomNavBar extends StatelessWidget {
-  final _model=Get.find<HomeController>();
-   BottomNavBar({super.key});
+  final _model=Get.find<CarHomeController>();
+  final IconData? icon0;
+  final IconData? icon1;
+  final IconData? icon2;
+  final IconData? icon3;
+
+   BottomNavBar({
+    super.key,
+    this.icon0 = Icons.abc,
+    this.icon1 = Icons.abc,
+    this.icon2 = Icons.abc,
+    this.icon3 = Icons.abc,
+  
+    
+    
+    });
 
   @override
   Widget build(BuildContext context) {
@@ -24,30 +38,42 @@ class BottomNavBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             _buildNavItem(
-              icon: Icons.home,
+              icon:  icon0!,
               index: 0,
-              onTap: () => _model.changePage(0),
+              onTap: () {
+                Get.until((route) => route.isFirst); // This will pop all routes until the first one // allows the bottom nav bar present on internal pages (the car details page within the cars home page, to route to the main pages)
+                _model.changePage(0);
+              },
               selectedColor: selectedColor,
               unselectedColor: unselectedColor,
             ),
             _buildNavItem(
-              icon: Icons.calendar_month_outlined,
+              icon:  icon1!,
               index: 1,
-              onTap: () =>  _model.changePage(1),
+              onTap: () { 
+                Get.until((route) => route.isFirst);
+                _model.changePage(1);
+              },
               selectedColor: selectedColor,
               unselectedColor: unselectedColor,
             ),
             _buildNavItem(
-              icon: Icons.notifications,
+              icon:  icon2!,
               index: 2,
-              onTap: () =>  _model.changePage(2),
+              onTap: () { 
+                Get.until((route) => route.isFirst);
+                _model.changePage(2);
+              },
               selectedColor: selectedColor,
               unselectedColor: unselectedColor,
             ),
             _buildNavItem(
-              icon: Icons.person_outline,
+              icon:  icon3!,
               index: 3,
-              onTap: () =>  _model.changePage(3),
+              onTap: () { 
+                Get.until((route) => route.isFirst);
+                _model.changePage(3);
+              },
               selectedColor: selectedColor,
               unselectedColor: unselectedColor,
             ),

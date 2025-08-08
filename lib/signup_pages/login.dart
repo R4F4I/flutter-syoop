@@ -49,7 +49,8 @@ class Login extends StatelessWidget {
               ),
               BlueButton(
                 text: "Log In",
-                minWidth: MediaQuery.of(context).size.width * 0.65,
+                horizontalPadding: MediaQuery.of(context).size.width * 0.27,
+                verticalPadding: 10,
                 onPressed: () {
                   print("Log in tapped");
                   Get.to(() => Intro());

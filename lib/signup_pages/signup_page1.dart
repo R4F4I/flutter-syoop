@@ -47,58 +47,26 @@ class SignupPage1 extends StatelessWidget {
             children: [
               BlueButton(
                 text: "Entrepreneur",
-                minWidth: MediaQuery.of(context).size.width * 0.65,
+                horizontalPadding: MediaQuery.of(context).size.width * 0.45,
                 onPressed: () {
                   print("Log in tapped");
                   Get.to(() => SignupPageEntrepreneur());
                 },
               ),
-              /* TextButton(
-                onPressed: () {
-                  print("Log in tapped");
-                  Get.to(() => SignupPageEntrepreneur());
-                }, 
-                style: TextButton.styleFrom(
-                  surfaceTintColor: const Color.fromARGB(130, 208, 208, 208),
-                  backgroundColor: const Color(0xFF0025A8),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                  minimumSize: Size(MediaQuery.of(context).size.width * 0.65, 55),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("Entrepreneur", style: TextStyle(fontFamily: 'Roboto',fontSize: 20, color: Colors.white, )
-                  ),
-                )
-              ), */
               
               Text("Or", style: TextStyle(fontFamily: 'Roboto',fontSize: 19)),
-              TextButton(
-                onPressed: () {
+              BlueButton(
+                onPressed: (){
                   print("Log in tapped");
                   Get.to(() => SignupPageUser());
-                  // Navigator.pushNamed(context, '/signup_page1');
-                }, 
-                style: TextButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    side: BorderSide(color: const Color(0xFF0025A8), width: 0.3),
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                  minimumSize: Size(MediaQuery.of(context).size.width * 0.65, 55),
-                  
-                ),
-
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("User", style: TextStyle(fontFamily: 'Roboto',fontSize: 20, color: const Color(0xFF0025A8), fontWeight: FontWeight.bold)
-                  ),
-                )
+                },
+                customColor: Colors.transparent,
+                enableBorder: true,
+                customText: Text("User", style: TextStyle(fontFamily: 'Roboto',fontSize: 20, color: const Color(0xFF0025A8), fontWeight: FontWeight.bold),),
+                horizontalPadding: MediaQuery.of(context).size.width * 0.55,
               ),
               SizedBox(height: 7,),
               TermsAndCond(),
-              
-              
             ],
           ),
         ],

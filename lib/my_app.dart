@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:syoop/home/car_detail_view.dart';
 import 'package:syoop/home/car_rental_home.dart';
 import 'package:syoop/home/home.dart';
+import 'package:syoop/main_pages/car_rental_main_page.dart';
 import 'package:syoop/signup_pages/signup_page_entrepreneur.dart';
 import 'package:syoop/splash_screen.dart';
 

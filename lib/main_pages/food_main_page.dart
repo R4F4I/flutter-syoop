@@ -16,8 +16,8 @@ class FoodMainPage extends StatelessWidget {
       body: Obx(() => _model.pages[_model.selectedIndex.value]), // the car rental page's body according the _model's selected index value 
       bottomNavigationBar:BottomNavBar(
         icon0: Icons.home_outlined,
-        icon1: Icons.check_box,
-        icon2: Icons.notifications_outlined,
+        icon1: Icons.checklist_rtl_outlined,
+        icon2: Icons.history,
         icon3: Icons.person_outline,
       ),
     );

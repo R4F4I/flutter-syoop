@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syoop/home/car_bookings.dart';
 import 'package:syoop/home/car_rental_home.dart';
+import 'package:syoop/home/food_home.dart';
+import 'package:syoop/home/food_orders.dart';
 
 class CarHomeController extends GetxController {
   
@@ -29,9 +31,9 @@ class FoodHomeController extends GetxController {
   RxInt selectedIndex = 0.obs; // RxInt is a class 
 
   final List<Widget> pages = [
-    const CarRentalHome(),
-    const CarBookings(),
-    const Scaffold(body: Center(child: Text('Notifications Page'))),
+    FoodHome(),    
+    FoodOrders(),
+    const Scaffold(body: Center(child: Text('history Page'))),
     const Scaffold(body: Center(child: Text('Profile Page'))),
   ];
 

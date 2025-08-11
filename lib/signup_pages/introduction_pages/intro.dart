@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syoop/home/home.dart';
 import 'package:syoop/main_pages/car_rental_main_page.dart'; // after intro, we will go to car rental main page,
+import 'package:syoop/main_pages/food_main_page.dart';
 import 'package:syoop/widgets/blue_button.dart';
 
 // the intro will have 4 widgets, image, title description, and a button
@@ -100,7 +101,7 @@ class Intro extends StatelessWidget {
                   case 0:
                   Get.to(() => Home());
                   case 1:
-                  Get.to(() => ());
+                  Get.to(() => FoodMainPage());
                   case 2:
                   Get.to(() => CarRentalMainPage());
                   case 3:

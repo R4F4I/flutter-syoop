@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:syoop/home/home_controller.dart';
 
 class BottomNavBar extends StatelessWidget {
-  final _model=Get.find<CarHomeController>();
+  final _model=Get.find<FoodHomeController>(); // TODO: the bottome nav bar is not completely implemented, the section functions are still hardcoded, might need to duplicate it for the diffferent nav bars as a general nav bar is not implemented (by me) 
   final IconData? icon0;
   final IconData? icon1;
   final IconData? icon2;

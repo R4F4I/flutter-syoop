@@ -39,14 +39,15 @@ class   FoodOrders  extends StatelessWidget {
                       ),
                       SizedBox(width: 10,),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Lorem', style: TextStyle(fontFamily: 'Roboto', fontSize: 16, color: Colors.white, fontWeight: FontWeight.w700),),
-                          Text('ipsum', style: TextStyle(fontFamily: 'Roboto', fontSize: 13, color: Colors.white,),),
+                          Text('Lorem', style: TextStyle(fontFamily: 'Roboto', fontSize: 16, color: Colors.white,),),
+                          Text('Lorem ipsum', style: TextStyle(fontFamily: 'Roboto', fontSize: 13, color: Color(0xffcccccc),fontWeight: FontWeight.w100),),
                         ],
                       ),
                     ],
                   ),
-                  Text('\$2$index', style: TextStyle(fontFamily: 'Roboto', fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),),
+                  Text('\$2$index', style: TextStyle(fontFamily: 'Roboto', fontSize: 16, color: Colors.white,),),
             
               ],),
               ),

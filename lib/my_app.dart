@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:syoop/controllers/home_controller.dart';
 import 'package:syoop/home/car_detail_view.dart';
 import 'package:syoop/home/car_rental_home.dart';
 import 'package:syoop/home/food_home.dart';
@@ -13,7 +14,7 @@ import 'signup_pages/introduction_pages/intro.dart';
 // import 'package:syoop/signup_pages/signup_page_user.dart';
 // import 'signup_pages/signup_page_entrepreneur.dart';
 
-// actual page to defualt page 
+// actual page to default page 
 // import 'package:syoop/splash_screen.dart';
 
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   
     return GetMaterialApp(
       title: 'Free Weather App',
       debugShowCheckedModeBanner: false,

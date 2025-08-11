@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:syoop/home/home_controller.dart';
+import 'package:syoop/controllers/home_controller.dart';
 import 'package:syoop/widgets/bottom_nav_bar.dart';
 
 class CarRentalMainPage extends StatelessWidget {

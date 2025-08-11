@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:syoop/home/home_controller.dart';
+import 'package:syoop/controllers/home_controller.dart';
 
 class BottomNavBar extends StatelessWidget {
-  final _model=Get.find<FoodHomeController>(); // TODO: the bottome nav bar is not completely implemented, the section functions are still hardcoded, might need to duplicate it for the diffferent nav bars as a general nav bar is not implemented (by me) 
+  final _model=Get.find<FoodHomeController>(); // TODO: the bottom nav bar is not completely implemented, the section functions are still hardcoded, might need to duplicate it for the different nav bars as a general nav bar is not implemented (by me) 
   final IconData? icon0;
   final IconData? icon1;
   final IconData? icon2;
